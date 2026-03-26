@@ -23,9 +23,9 @@ jobs:
         run: chmod +x ./gradlew
       - name: copy gradle-wrapper
         run: |
-          chmod +rwx gradle/gradle-wrapper-forgithub.properties
-          chmod +rwx gradle/gradle-wrapper.properties
-          cp -f gradle/gradle-wrapper-forgithub.properties gradle/gradle-wrapper.properties
+          chmod +rwx gradle/wrapper/gradle-wrapper-forgithub.properties
+          chmod +rwx gradle/wrapper/gradle-wrapper.properties
+          cp -f gradle/wrapper/gradle-wrapper-forgithub.properties gradle/wrapper/gradle-wrapper.properties
       - name: build
         run: ./gradlew build
       - name: capture build artifacts
