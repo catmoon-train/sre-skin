@@ -20,12 +20,9 @@ jobs:
           java-version: "21"
           distribution: "microsoft"
       - name: make gradle wrapper executable
-        run: chmod +x ./gradlew
+        run: chmod +x ./ghgradle.sh
       - name: copy gradle-wrapper
-        run: |
-          chmod +rwx gradle/wrapper/gradle-wrapper-forgithub.properties
-          chmod +rwx gradle/wrapper/gradle-wrapper.properties
-          cp -f gradle/wrapper/gradle-wrapper-forgithub.properties gradle/wrapper/gradle-wrapper.properties
+        run: sh ./ghgradle.sh
       - name: build
         run: ./gradlew build
       - name: capture build artifacts
