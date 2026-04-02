@@ -21,6 +21,12 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 		SkinManager.registerSkin(skinType, skinID, color);
 	}
 
+	public static void registerSkins(String skinType, QualityColor qualityColor, String... skinIDs) {
+		for (String skinID : skinIDs) {
+			registerSkin(skinType, skinID, qualityColor.getColor());
+		}
+	}
+
 	@Override
 	public void onInitialize() {
 		// API
@@ -104,6 +110,23 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 		registerSkin(SkinTypes.KNIFE, "unconscious_knife", QualityColor.LEGENDARY.getColor());
 		registerSkin(SkinTypes.KNIFE, "tenet", QualityColor.LEGENDARY.getColor());
 
+		// New knife skins 2026.4
+		registerSkins(SkinTypes.KNIFE, QualityColor.UNCOMMON,
+			"carp_knife", "not_cooked");
+		registerSkins(SkinTypes.KNIFE, QualityColor.RARE,
+			"brush", "glass_knife", "jett");
+		registerSkins(SkinTypes.KNIFE, QualityColor.EPIC,
+			"anubis", "blade_of_soul", "cheems_knife", "coral", "dark_sparks", "death_edge",
+			"evolutionary_truster", "exknife", "flame_sword", "greed", "inflammatory_burial",
+			"lightning_nunchakus", "zmd_fuyao", "zmd_guangrongjiyi");
+		registerSkins(SkinTypes.KNIFE, QualityColor.LEGENDARY,
+			"loyalty", "magnetite_sword", "mountain_opening", "ou_bu_rapier", "qingjian", "qu",
+			"sapphire", "sapphire_feast", "scorching_heat", "scribbled_hammer", "sword_executioner",
+			"time_limit_sword", "zmd_ansehuoju");
+		registerSkins(SkinTypes.KNIFE, QualityColor.UNBELIEVABLE,
+			"quill", "lightning_whip", "galaxy_spark", "head_dart", "scarlet_scar",
+			"zmd_helafenge", "zmd_xiangxinzhiyin");
+
 		// Initialize revolver skins
 		registerSkin(SkinTypes.REVOLVER, "double_pistol", QualityColor.RARE.getColor());
 		registerSkin(SkinTypes.REVOLVER, "heavy_pistol", QualityColor.RARE.getColor());
@@ -158,6 +181,19 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 		registerSkin(SkinTypes.REVOLVER, "electrodynamics", QualityColor.EPIC.getColor());
 		registerSkin(SkinTypes.REVOLVER, "qianxia", QualityColor.EPIC.getColor());
 
+		// New gun skins 2026.4
+		registerSkins(SkinTypes.REVOLVER, QualityColor.RARE,
+			"glass_gun",
+			"gold_defibrillator", "hattansang", "hunt_of_glory", "jungle_edge", "king_gun");
+		registerSkins(SkinTypes.REVOLVER, QualityColor.EPIC,
+			"lava_rock", "navy_then_issued_pistols", "rune_magic_bow", "sex_pistol", "spit_cattle",
+			"strange_box", "the_moon", "thorn_slingshot", "tooth_3", "yellow_paper", "zero_purchase","beak_peak", "blue_rose", "close_relations", "devils_claws", "flower_sleep");
+		registerSkins(SkinTypes.REVOLVER, QualityColor.LEGENDARY,
+			"zmd_qizi", "zmd_wangxiang", "zmd_xiangshi");
+		registerSkins(SkinTypes.REVOLVER, QualityColor.UNBELIEVABLE,
+			"blackgold", "cat_gun", "divine", "eyeball", "golden_gyration",
+			"zmd_gaobie", "zmd_linghangzhe", "zmd_luocao", "zmd_obj");
+
 		// PVZ gun skins
 		registerSkin(SkinTypes.REVOLVER, "pvz_peashooter", QualityColor.UNBELIEVABLE.getColor());
 		registerSkin(SkinTypes.REVOLVER, "pvz_icemelon_gun", QualityColor.UNBELIEVABLE.getColor());
@@ -211,6 +247,16 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 		// New grenade skins 2026
 		registerSkin(SkinTypes.GRENADE, "slime_redstone_torch", QualityColor.RARE.getColor());
 
+		// Supplemental grenade skins 2026.4
+		registerSkins(SkinTypes.GRENADE, QualityColor.EPIC,
+			"diablo", "dio", "engine_grenade", "final_times", "halo", "ice_dart", "indonesian_bytes",
+			"jiliang_op", "kettle", "my_sword_shield", "rotary_iron_ball", "rune_blasting",
+			"standdisc", "taiji", "the_world", "zmd_daowangshipian", "zmd_keshi");
+		registerSkins(SkinTypes.GRENADE, QualityColor.LEGENDARY,
+			"big_banana", "destroy_explosive", "foxy_grenade", "gugugaga", "zmd_cangminmeng");
+		registerSkins(SkinTypes.GRENADE, QualityColor.UNBELIEVABLE,
+			"lao_gan_ma", "withered_heart_bomb", "beast_ancestors", "haha");
+
 		// Initialize bat skins
 		registerSkin(SkinTypes.BAT, "bread", QualityColor.LEGENDARY.getColor());
 		registerSkin(SkinTypes.BAT, "red_axe", QualityColor.UNCOMMON.getColor());
@@ -246,7 +292,19 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 		// New bat skins 2026
 		registerSkin(SkinTypes.BAT, "guitar", QualityColor.LEGENDARY.getColor());
 
+		// Supplemental bat skins 2026.4
+		registerSkins(SkinTypes.BAT, QualityColor.RARE,
+			"tnt_triple_sword", "wolf_teeth_club_2", "zmd_amethyst_fiber");
+		registerSkins(SkinTypes.BAT, QualityColor.EPIC,
+			"bat_wrench", "black_king", "boming", "combat_instrument", "ground_chain_sickle",
+			"purgatory_forging", "rune_sword", "ultimate_gold_weapon", "yellow_sword", "zmd_bambooshoots");
+		registerSkins(SkinTypes.BAT, QualityColor.LEGENDARY,
+			"snow_kings_staff", "eel", "excalibur");
+		registerSkins(SkinTypes.BAT, QualityColor.UNBELIEVABLE,
+			"platinum_arm", "chigang", "jin_gu_bang");
+
 		// PVZ bat skins
+		registerSkin(SkinTypes.BAT, "pvz_ladder", QualityColor.LEGENDARY.getColor());
 		registerSkin(SkinTypes.BAT, "pvz_newspaper", QualityColor.UNBELIEVABLE.getColor());
 		registerSkin(SkinTypes.BAT, "pvz_tall_peanut", QualityColor.LEGENDARY.getColor());
 		registerSkin(SkinTypes.BAT, "pvz_wire_pole", QualityColor.LEGENDARY.getColor());
