@@ -311,7 +311,7 @@
         {
             "PoolID":8,
             "Enable":true,
-            "PoolName":"刀4卡池",
+            "PoolName":"手起刀落",
             "PoolType":"Common",
             "QualityListGroup":[
                 {
@@ -355,7 +355,7 @@
         {
             "PoolID":9,
             "Enable":true,
-            "PoolName":"枪2卡池",
+            "PoolName":"神枪手",
             "PoolType":"Common",
             "QualityListGroup":[
                 {
