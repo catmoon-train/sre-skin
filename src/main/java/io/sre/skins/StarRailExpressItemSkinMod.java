@@ -194,6 +194,7 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 			"zmd_qizi", "zmd_wangxiang", "zmd_xiangshi");
 		registerSkins(SkinTypes.REVOLVER, QualityColor.UNBELIEVABLE,
 			"blackgold", "cat_gun", "divine", "eyeball", "golden_gyration",
+			"green_glass", "dark_blue", "iron_ball_gun",
 			"zmd_gaobie", "zmd_linghangzhe", "zmd_luocao", "zmd_obj");
 
 		// PVZ gun skins
