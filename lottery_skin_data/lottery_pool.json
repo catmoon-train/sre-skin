@@ -277,7 +277,7 @@
                     ]
                 },
                 {
-                    "Probability":0.2,
+                    "Probability":0.19,
                     "ItemList":[
                         "coin"
                     ]
@@ -391,7 +391,13 @@
                 {
                     "Probability":0.015,
                     "ItemList":[
-                        "gun/cat_gun","gun/blackgold","gun/divine","gun/eyeball","gun/golden_gyration"
+                        "gun/cat_gun","gun/blackgold","gun/divine","gun/eyeball","gun/golden_gyration","gun/white_gold_gun"
+                    ]
+                },
+                {
+                    "Probability":0.01,
+                    "ItemList":[
+                        "gun/canyue_gun"
                     ]
                 }
             ]

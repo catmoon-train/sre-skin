@@ -178,6 +178,8 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 		// New gun skins 2026
 		registerSkin(SkinTypes.REVOLVER, "art_tyrant", QualityColor.RARE.getColor());
 		registerSkin(SkinTypes.REVOLVER, "burn_out_sulfur", QualityColor.RARE.getColor());
+		registerSkin(SkinTypes.REVOLVER, "white_gold_gun", QualityColor.UNBELIEVABLE.getColor());
+		registerSkin(SkinTypes.REVOLVER, "canyue_gun", QualityColor.UNBELIEVABLE.getColor());
 		registerSkin(SkinTypes.REVOLVER, "electrodynamics", QualityColor.EPIC.getColor());
 		registerSkin(SkinTypes.REVOLVER, "qianxia", QualityColor.EPIC.getColor());
 
