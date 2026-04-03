@@ -118,13 +118,13 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 		registerSkins(SkinTypes.KNIFE, QualityColor.EPIC,
 			"anubis", "blade_of_soul", "cheems_knife", "coral", "dark_sparks", "death_edge",
 			"evolutionary_truster", "exknife", "flame_sword", "greed", "inflammatory_burial",
-			"lightning_nunchakus", "zmd_fuyao", "zmd_guangrongjiyi");
+			"lightning_nunchakus", "red_butterfly_knife", "green_butterfly_knife", "zmd_fuyao", "zmd_guangrongjiyi");
 		registerSkins(SkinTypes.KNIFE, QualityColor.LEGENDARY,
 			"loyalty", "magnetite_sword", "mountain_opening", "ou_bu_rapier", "qingjian", "qu",
 			"sapphire", "sapphire_feast", "scorching_heat", "scribbled_hammer", "sword_executioner",
 			"time_limit_sword", "zmd_ansehuoju");
 		registerSkins(SkinTypes.KNIFE, QualityColor.UNBELIEVABLE,
-			"quill", "lightning_whip", "galaxy_spark", "head_dart", "scarlet_scar",
+			"quill", "lightning_whip", "galaxy_spark", "head_dart", "scarlet_scar", "gold_claw_knife", "ruby_claw_knife",
 			"zmd_helafenge", "zmd_xiangxinzhiyin");
 
 		// Initialize revolver skins
