@@ -124,7 +124,7 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 			"sapphire", "sapphire_feast", "scorching_heat", "scribbled_hammer", "sword_executioner",
 			"time_limit_sword", "zmd_ansehuoju");
 		registerSkins(SkinTypes.KNIFE, QualityColor.UNBELIEVABLE,
-			"quill", "lightning_whip", "galaxy_spark", "head_dart", "scarlet_scar", "gold_claw_knife", "ruby_claw_knife",
+			"quill", "lightning_whip", "galaxy_spark", "head_dart", "scarlet_scar", "gold_claw_knife", "ruby_claw_knife", "canyue_knife",
 			"zmd_helafenge", "zmd_xiangxinzhiyin");
 
 		// Initialize revolver skins
@@ -304,7 +304,7 @@ public class StarRailExpressItemSkinMod implements ModInitializer {
 		registerSkins(SkinTypes.BAT, QualityColor.LEGENDARY,
 			"snow_kings_staff", "eel", "excalibur");
 		registerSkins(SkinTypes.BAT, QualityColor.UNBELIEVABLE,
-			"platinum_arm", "chigang", "jin_gu_bang");
+			"platinum_arm", "chigang", "jin_gu_bang", "musical");
 
 		// PVZ bat skins
 		registerSkin(SkinTypes.BAT, "pvz_ladder", QualityColor.LEGENDARY.getColor());
